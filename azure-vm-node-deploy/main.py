@@ -1,6 +1,8 @@
 # run this file passing in
 # - the local port of node app
 # - its github repo
+# - resource group name
+# - vm name
 # ie. ./deploy_to_vm.py 4000 https://github.com/msolorio/test-repo
 
 import create_cloud_init
