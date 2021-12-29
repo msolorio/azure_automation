@@ -6,7 +6,7 @@
 # 3). resource group name
 # 4). vm name
 # 5). circle ci api token
-# ie. ./deploy_to_vm.py 4000 https://github.com/msolorio/test-repo rg-test vm-test 1234
+# ie. azure_vm_circleci_node_deploy 4000 https://github.com/msolorio/test-repo rg-test vm-test 1234
 
 import sys
 
