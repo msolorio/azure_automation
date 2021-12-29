@@ -8,7 +8,7 @@ A collection of automation scripts for interacting with Azure cloud provider.
 - Solidify cloud computing and CI/CD concepts
 - Write python / shell scripts
 - Interact with necessary CLIs and APIs
-- Document steps for carrying out important cloud computing tasks
+- Document steps for important cloud computing tasks
 - Setup and tear down projects efficiently, host projects only when needed, and save on cloud computing costs
 
 ---
