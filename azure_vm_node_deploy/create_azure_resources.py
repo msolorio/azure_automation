@@ -1,4 +1,4 @@
-import sys, os, subprocess
+import sys, os, subprocess, json
 
 current_path = os.getcwd()
 script_path = sys.path[0]
@@ -20,5 +20,6 @@ def main():
     subprocess.call(['sh', open_http_port_path, RESOURCE_GROUP_NAME, VM_NAME])
 
 
-    print('vm ==> ', vm)
-    
+    json_output = json.loads(vm.decode('utf-8'))
+
+    print('public IP Address:', json_output['publicIpAddress'])
