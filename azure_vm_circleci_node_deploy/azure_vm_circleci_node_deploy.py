@@ -1,12 +1,25 @@
 #!/usr/bin/env python3
 
-# run this file passing in
-# 1). the local port of node app
-# 2). its github repo
-# 3). resource group name
-# 4). vm name
-# 5). circle ci api token
-# ie. azure_vm_circleci_node_deploy 4000 https://github.com/msolorio/test-repo rg-test vm-test 1234
+"""
+Steps for automated setup of continuous deployment with CircleCi to an Azure VM for a Node app.
+
+1).
+Run this file while navigated into the root of your node project, passing in the appropriate arguments.
+
+a). the local port of node app
+b). its github repo
+c). resource group name
+d). vm name
+e). circle ci api token
+
+ie.
+azure_vm_circleci_node_deploy.py 4000 https://github.com/msolorio/test-repo rg-test vm-test 1234
+
+2).
+In your CircleCi account, Add an Environment variable with the name AZURE_VM_SSH_FINGERPRINT and a value set to the fingerprint of the newly generated alternate ssh key. This will be used to connect to the Azure VM.
+
+3). Push a change up to your project's Github repo, triggering a build, seeing changes in your vm.
+"""
 
 import sys
 
